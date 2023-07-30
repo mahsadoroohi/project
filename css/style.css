@@ -74,9 +74,6 @@ body button{
         color: var(--primery-color);
         font-size: 28px;
     }
-    .social-media span{
-        /* display: block; */
-    }
     .telegram,
     .phone{
         gap: 20px;
@@ -499,7 +496,7 @@ body button:hover
     /* width: 24%; */
     line-height: 1.8em;
     font-size: 16px;
-    height: 80vh;
+    height: 86vh;
     background-color: white;
 }
 .image-blog{
@@ -618,7 +615,7 @@ body button:hover
 .teacher-child-text p:nth-child(1){
     color: var(--primery-color);
 }
-/* .................form register......... */
+
 .main-Request{
     width: 100%;
     height: 90vh;
@@ -646,6 +643,7 @@ body button:hover
     padding-bottom: 60px;
 }
 input[type=text], 
+input[type=email],
 input[type=phone],
 textarea,
 select
@@ -664,6 +662,7 @@ select
     outline: none;
 }
 input[type=text]::placeholder,
+input[type=email]::placeholder,
 input[type=phone]::placeholder,
 textarea::placeholder
 {
@@ -828,7 +827,7 @@ footer .location,
 .admin{
     gap: 14px;
     color: var(--primery-color);
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 .admin i{
     color: gray;
@@ -879,6 +878,7 @@ li
     background-color: #6700e6;
     font-size: 25px;
     color: white;
+        margin: 0 5px;
 }
 .subscribe button:hover{
     background-color: var(--primery-color);
@@ -991,7 +991,7 @@ li
         font-size: 17px;
     }
     .blog-main{
-        height: 190vh;
+        height: 205vh;
     }
     .what-offer p{
         padding-bottom: 35px;
@@ -1109,7 +1109,7 @@ footer .qustion, .recent, .links{
     }
     .offer{
         margin: 0px 20px;
-        width: 130%;
+        width: 100%;
         transform: translate(-110px ,0);
         
 
@@ -1163,12 +1163,16 @@ footer .qustion, .recent, .links{
         margin: 47px 0px 0px 63px;
         width: 100%;
     }
-    input[type=text], input[type=phone], textarea, select{
+    input[type=text],
+    input[type=email],
+     input[type=phone], 
+     textarea, select
+     {
         width: 80%;
     }
     .main-Request{
         justify-content: start;
-        height: 105vh;
+        height: 120vh;
     }
     .Request-requst{
         transform: translate(0px , 0px);
@@ -1225,11 +1229,12 @@ footer .qustion, .recent, .links{
         flex-direction: column;
     }
     .blog-main {
-        height: 270vh;
+        height: 316vh;
     }
     .student{
         width: 80%;
-        transform: translate(17% , 0);
+        transform: translate(5% , 0);
+        height: 100vh;
     }
     .picture-student {
         flex-direction: column;
@@ -1238,9 +1243,15 @@ footer .qustion, .recent, .links{
         width: 100%;
         height: 50vh;
     }
+    .image-student {
+      
+        width: 324px;
+        height: 112px;
+        background-position: top;
+    }
     footer{
         
-    height: 180vh;
+    height: 220vh;
     }
     footer h2 {
         margin: 0px 0px;
@@ -1364,9 +1375,9 @@ footer .qustion, .recent, .links{
 }
 @media (max-width:768px){
     .bx-search-alt-2{
-        position: absolute;
-        right: 2%;
-        top: 18%;
+    position: absolute;
+    right: 3%;
+    top: 51%;
     }
 }
 /*end new for nav-bar */
